@@ -1,0 +1,82 @@
+<html>
+
+  <body class="conteiner">
+    <h1 class="text-center">Criar Log</h1>
+
+    <form class="form-horizontal" [formGroup]="formulario">
+      <div class="form-group">
+        <div class="col-md-3">
+          <label for="data"> Data </label>
+          <input
+            type="datetime-local"
+            class="form-control"
+            id="data"
+            placeholder="2020-01-01 00:00"
+            formControlName="data"
+          />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-3">
+          <label for="ip"> IP </label>
+          <input
+            type="text"
+            class="form-control"
+            id="ip"
+            placeholder="xxx.xxx.xxx.x"
+            formControlName="ip"
+          />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-3">
+          <label for="metodo"> Metodo </label>
+          <input
+            type="text"
+            class="form-control"
+            id="metodo"
+            placeholder="GET / HTTP/1.1 "
+            formControlName="metodo"
+          />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-3">
+          <label for="status"> Status</label>
+          <input
+            type="text"
+            class="form-control"
+            id="status"
+            placeholder="200"
+            formControlName="status"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-3">
+          <label for="userAgent"> userAgent </label>
+          <input
+            type="text"
+            class="form-control"
+            id="userAgent"
+            placeholder="swcd (unknown version) CFNetwork/808.2.16 Darwin/15.6.0"
+            formControlName="userAgent"
+          />
+        </div>
+      </div>
+      <div>
+        <button
+          type="submit"
+          class="btn btn-primary"
+
+          (click)="onSubmit()"
+        >
+          Save
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

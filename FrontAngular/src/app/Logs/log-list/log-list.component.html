@@ -1,0 +1,58 @@
+<div class="card mt-3">
+  <div class="card-header">
+    <div class="float-left">
+      <h4>Logs</h4>
+    </div>
+    <div class="float-right">
+      <button
+        type="button"
+        class="btn btn-primary"
+        [routerLink]="['/novo']"
+        routerLinkActive="active"
+      >
+        Novo
+      </button>
+    </div>
+     <!-- </div> -->
+     <div class="card-body">
+      <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>IP</th>
+          <th>Request</th>
+          <th>Status</th>
+          <th></th>
+          <th>Data</th>
+          <th></th>
+          <th>UserAngent</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let arquivos of imports">
+          <td>{{ arquivos.id }}</td>
+          <td>{{ arquivos.ip }}</td>
+          <td>{{ arquivos.metodo }}</td>
+          <td>{{ arquivos.status }}</td>
+          <td></td>
+          <td>{{ arquivos.data }}</td>
+          <td></td>
+          <td>{{ arquivos.userAgent }}</td>
+          <td>
+            <span class="float-right">
+              <button
+                type="edit"
+                class="btn btn-primary"
+                (click)="onEdit(arquivos.id)"
+              >
+                editar
+              </button>
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>

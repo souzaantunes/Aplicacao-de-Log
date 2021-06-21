@@ -1,0 +1,20 @@
+<div styles="margin-top: 12px">
+  <div class="custom-file">
+    <input
+      type="file"
+      class="custom-file-input"
+      id="customFileLang"
+      lang="es"
+      (change)="onChange($event)"
+      required
+    />
+    <label class="custom-file-label" for="customFileLang" id="customFilelabel"
+      >selecionar arquivo</label
+    >
+  </div>
+</div>
+<div styles="margin-top: 12px">
+  <button type="button" class="btn btn-primary" (click)="onUpload()">
+    salvar
+  </button>
+</div>

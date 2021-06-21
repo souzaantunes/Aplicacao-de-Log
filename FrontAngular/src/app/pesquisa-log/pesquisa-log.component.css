@@ -1,0 +1,23 @@
+.search-table{
+  padding: 10%;
+  margin-top: -5%;
+}
+.search-box{
+  background: #f3f3f7;
+  border: 2px solid #d3d0d0;
+  padding: 3%;
+}
+.search-box input:focus{
+  box-shadow:none;
+  border:2px solid #d3d0d0;
+}
+.search-list{
+  /* background: #fff; */
+  border: 2px solid #d3d0d0;
+  border-top: none;
+}
+.search-list h5{
+  /* background: #eee; */
+  padding: 1%;
+  margin-bottom: -1%;
+}
