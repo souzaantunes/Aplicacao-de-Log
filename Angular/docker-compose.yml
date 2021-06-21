@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+    db:
+      image: postgres
+     
+      environment:
+        POSTGRES_USER: root
+        POSTGRES_PASSWORD: root
+      ports:
+      - "5432:5432"
+      volumes: 
+      - essencial_data:/var/lib/postgres
+       
+volumes:
+   essencial_data:

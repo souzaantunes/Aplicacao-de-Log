@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;Angular&apos; to &apos;Angular-Back&apos;&#x0D;&#x0A;- Original element: &apos;Angular&apos;&#x0D;&#x0A;- Renamed element: &apos;Angular&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;Angular&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=Angular" name="Angular-Back" references="true" stamp="1624232803050" version="1.0"/>
+</session>
